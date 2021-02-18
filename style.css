@@ -70,8 +70,32 @@ html {
 }
 
 /* Content Wrapper */
+.vine {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+}
+
+.content-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.box-title {
+  color: rgb(158, 108, 68);
+  position: relative;
+  display: inline-block;
+  font-size: 2.2rem;
+  font-family: Garamond, serif;
+  text-align: left;
+  justify-content: center;
+  width: 125rem;
+  border-bottom: 2px solid rgb(158, 108, 68);
+  border-radius: 1px;
+}
 
 .box-wrapper {
+  margin: 0.5rem;
   display: grid;
   grid-template-columns: 40rem 40rem 40rem;
   gap: 3rem;
@@ -93,14 +117,19 @@ html {
 .box-text-overlay {
   position: absolute;
   bottom: 0;
-  padding: 0.8rem;
+  padding-left: 0.2rem;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   font-size: 2rem;
   font-family: Garamond, serif;
   color: white;
-  background-color: rgb(158, 108, 68);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 187, 155, 1) 0%,
+    rgba(139, 103, 45, 1) 60%,
+    rgba(98, 61, 18, 1) 100%
+  );
   width: 100%;
   box-shadow: 0 0px 5px 0px #333;
 }
@@ -114,6 +143,7 @@ html {
 .new {
   opacity: 0;
   float: right;
+  padding-right: 0.2rem;
 }
 
 .old {
@@ -143,24 +173,29 @@ html {
 
 /* info styles */
 
-.info {
+.info-wrapper {
+  display: flex;
   text-align: center;
-  margin-top: 6rem;
+  justify-content: center;
+  margin-top: 3rem;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.info h1 {
+.info-block h1 {
   color: rgb(158, 108, 68);
   font-size: 4rem;
+  width: 40rem;
+  margin: 1.5rem;
 }
 
-.info p {
+.info-block p {
   font-size: 2rem;
+  width: 40rem;
+  margin: 1.5rem;
 }
 
-.info hr {
-  margin: 2rem;
+.info-wrapper hr {
   border: 1px solid rgb(158, 108, 68);
 }
 
