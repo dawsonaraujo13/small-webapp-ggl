@@ -73,10 +73,9 @@ html {
 
 .box-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 40rem 40rem 40rem;
   gap: 3rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  align-items: center;
   justify-content: center;
 }
 
@@ -85,8 +84,6 @@ html {
   display: flex;
   height: 50rem;
   width: 40rem;
-  justify-content: center;
-  align-items: center;
   background-color: whitesmoke;
   border-radius: 8px;
   border: 2px solid rgb(158, 108, 68);
