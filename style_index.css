@@ -1,14 +1,19 @@
 html {
   font-size: 62.5%;
   overflow: scroll;
-  background-color: rgb(245, 226, 214);
+  background: rgb(242, 211, 188);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 211, 188, 1) 0%,
+    rgba(231, 227, 228, 1) 100%
+  );
 }
 
 body {
   font-family: "Vidaloka", serif;
 }
 
-/* Nav Styles */
+/* Nav Styles F2D3BC E5CBCE*/
 
 .nav {
   position: relative;
@@ -53,11 +58,14 @@ body {
   border-top: 1px solid rgb(158, 108, 68);
   border-bottom: 1px solid rgb(158, 108, 68);
   background-color: whitesmoke;
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .subnav-pic {
   position: relative;
-  justify-content: center;
 }
 
 .subnav-text h2 {
@@ -71,6 +79,31 @@ body {
   justify-content: center;
 }
 
+.call-to-action {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.action-button {
+  color: white;
+  text-decoration: none;
+  font-size: 3.2rem;
+  background: rgb(168, 155, 145);
+  background: linear-gradient(
+    137deg,
+    rgba(168, 155, 145, 1) 0%,
+    rgba(135, 106, 88, 1) 52%,
+    rgba(129, 82, 54, 1) 100%
+  );
+  padding: 1.4rem 1.4rem;
+  border: black;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px 5px gray;
+}
 /* Content Wrapper */
 
 .content-wrapper {
@@ -90,22 +123,37 @@ body {
 
 .box-wrapper {
   margin: 0.5rem;
-  display: grid;
-  grid-template-columns: 40rem 40rem 40rem;
-  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15rem;
 }
 
 .box {
+  vertical-align: top;
   position: relative;
-  display: flex;
+  display: inline-block;
+  margin: 2rem;
   height: 50rem;
   width: 40rem;
   background-color: whitesmoke;
   border-radius: 8px;
   border: 3px solid rgb(158, 108, 68);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15rem;
+}
+
+.box:nth-child(3) {
+  margin-bottom: 5rem;
+}
+
+.box-background {
+  background-size: cover;
+  position: relative;
+  height: 50rem;
+  width: 40rem;
 }
 
 .box-text-overlay {
@@ -129,20 +177,38 @@ body {
 }
 
 .box-text-transition-wrapper {
+  display: flex;
   position: grid;
   width: 100%;
   height: 100%;
   padding: 0.5rem 1rem;
 }
 
+.box-description {
+  display: inline-block;
+  margin-top: 1.4rem;
+  position: relative;
+  font-size: 2rem;
+  height: 15rem;
+  border-bottom: 2px solid rgb(158, 108, 68);
+}
+
+.box-description p {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
 .new {
+  flex: 1;
   opacity: 0;
-  float: right;
   padding-right: 0.2rem;
+  text-align: end;
 }
 
 .old {
-  float: left;
+  flex: 1;
+  text-align: start;
 }
 
 .old,
@@ -160,61 +226,36 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 .box p {
-  margin-top: 0.5rem;
-}
-
-/* info styles */
-
-.info-wrapper {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.info-block h1 {
-  color: rgb(158, 108, 68);
-  font-size: 4rem;
-  width: 40rem;
-  margin: 1.5rem;
-}
-
-.info-block p {
-  font-size: 2rem;
-  width: 40rem;
-  margin: 1.5rem;
-}
-
-.info-wrapper hr {
-  border: 1px solid rgb(158, 108, 68);
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 /* footer styles */
 .footer {
-  margin-top: 4rem;
+  display: inline-block;
   position: relative;
   height: 20rem;
   width: 100%;
   background-color: black;
+  justify-content: center;
 }
 
 .footer-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  align-content: center;
+  justify-content: center;
 }
 
 .social-media {
   position: relative;
-  display: inline-flex;
+  display: inline-block;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
