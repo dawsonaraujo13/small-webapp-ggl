@@ -93,15 +93,16 @@ body {
   font-size: 3rem;
   background: rgb(168, 155, 145);
   background: linear-gradient(
-    137deg,
-    rgba(168, 155, 145, 1) 0%,
-    rgba(135, 106, 88, 1) 52%,
-    rgba(129, 82, 54, 1) 100%
+    90deg,
+    rgb(201, 169, 130) 0%,
+    rgb(102, 77, 38) 60%,
+    rgb(114, 73, 30) 100%
   );
   padding: 0.6rem 1rem 0.8rem;
   border: black;
+  border-radius: 3px;
   cursor: pointer;
-  box-shadow: 0 0 6px 4px rgb(109, 109, 109);
+  box-shadow: 0 0 6px 4px rgb(122, 122, 122);
 }
 /* Content Wrapper */
 
@@ -165,9 +166,9 @@ body {
   color: white;
   background: linear-gradient(
     90deg,
-    rgba(214, 187, 155, 1) 0%,
-    rgba(139, 103, 45, 1) 60%,
-    rgba(98, 61, 18, 1) 100%
+    rgb(212, 182, 145) 0%,
+    rgb(102, 77, 38) 60%,
+    rgb(82, 51, 17) 100%
   );
   width: 100%;
   box-shadow: 0 0px 5px 0px #333;
