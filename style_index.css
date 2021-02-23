@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   overflow: scroll;
@@ -201,7 +207,6 @@ body {
 
 .new {
   flex: 1;
-  opacity: 0;
   padding-right: 0.2rem;
   text-align: end;
 }
@@ -209,15 +214,6 @@ body {
 .old {
   flex: 1;
   text-align: start;
-}
-
-.old,
-.new {
-  transition: opacity 0.5s linear;
-}
-
-.box:hover .new {
-  opacity: 1;
 }
 
 .box-background {
@@ -263,10 +259,4 @@ body {
   position: relative;
   height: 5rem;
   width: 5rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
