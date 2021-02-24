@@ -7,12 +7,7 @@
 html {
   font-size: 62.5%;
   overflow: scroll;
-  background: rgb(242, 211, 188);
-  background: linear-gradient(
-    180deg,
-    rgba(242, 211, 188, 1) 0%,
-    rgba(231, 227, 228, 1) 100%
-  );
+  background-color: rgb(153, 126, 106);
 }
 
 body {
@@ -21,38 +16,47 @@ body {
 
 /* Nav Styles F2D3BC E5CBCE*/
 
+.banner {
+  width: 30rem;
+  height: 20rem;
+}
+
 .nav {
   position: relative;
   font-size: 2.5rem;
-  height: 15%;
+  height: 40rem;
   width: 100%;
-  background-color: rgb(242, 211, 188);
-
-  padding-top: 2rem;
+  background: url(/images/4k2.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav a {
+  position: relative;
   color: white;
   text-decoration: none;
-  text-align: center;
   display: inline-block;
   padding: 1.2rem 2.5rem;
   font-weight: bold;
   font-size: 2.3rem;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s;
   transition: color 0.5s;
 }
 
 .nav a:hover {
-  border-bottom: 2px solid rgb(155, 155, 155);
+  border-bottom: 4px solid rgb(155, 155, 155);
   color: rgb(155, 155, 155);
 }
 
-.nav a:nth-child(2) {
-  border-bottom: 2px solid rgb(155, 155, 155);
+.nav a:nth-child(1) {
+  border-bottom: 4px solid rgb(155, 155, 155);
 }
 
 .nav-logo {
@@ -61,6 +65,10 @@ body {
   text-align: center;
 }
 
+nav-buttons {
+  display: inline-block;
+  width: 100%;
+}
 /* Subnav styles */
 
 .subnav {
@@ -79,7 +87,7 @@ body {
 }
 
 .subnav-text h2 {
-  color: black;
+  color: white;
   position: relative;
   text-align: center;
   font-size: 4rem;
@@ -122,7 +130,7 @@ body {
 }
 
 .box-title {
-  color: rgb(158, 108, 68);
+  color: white;
   position: relative;
   display: inline-block;
   font-size: 2.2rem;

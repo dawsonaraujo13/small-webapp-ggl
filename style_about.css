@@ -36,18 +36,18 @@ body {
   padding: 1.2rem 2.5rem;
   font-weight: bold;
   font-size: 2.3rem;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s;
   transition: color 0.5s;
 }
 
 .nav a:hover {
-  border-bottom: 2px solid rgb(155, 155, 155);
+  border-bottom: 4x solid rgb(155, 155, 155);
   color: rgb(155, 155, 155);
 }
 
-.nav a:nth-child(4) {
-  border-bottom: 2px solid rgb(155, 155, 155);
+.nav a:nth-child(3) {
+  border-bottom: 4px solid rgb(155, 155, 155);
 }
 
 .nav-logo {
