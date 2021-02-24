@@ -51,6 +51,10 @@ body {
   color: rgb(155, 155, 155);
 }
 
+.nav a:nth-child(2) {
+  border-bottom: 2px solid rgb(155, 155, 155);
+}
+
 .nav-logo {
   position: relative;
   width: 100%;

@@ -46,6 +46,10 @@ body {
   color: rgb(155, 155, 155);
 }
 
+.nav a:nth-child(4) {
+  border-bottom: 2px solid rgb(155, 155, 155);
+}
+
 .nav-logo {
   position: relative;
   width: 100%;
@@ -53,29 +57,36 @@ body {
 }
 
 .content {
-  position: relative;
   display: flex;
-  padding: 0rem 5rem;
-}
-
-.about {
-  display: flex;
-  position: relative;
-  background-image: url(/images/woman.jpeg);
-  background-size: 55%;
-  background-repeat: no-repeat;
-  height: 50rem;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
-.inner-box {
-  position: relative;
-  float: right;
-  width: 55%;
-  height: 35rem;
-  color: white;
+.about {
+  background: url(/images/woman.jpeg) no-repeat left;
+  background-size: 55%;
+  background-color: whitesmoke;
+  min-height: 35vh;
+  width: 80%;
+  padding: 100px 0;
 }
 
+.inner {
+  background-color: rgb(242, 211, 188);
+  width: 55%;
+  float: right;
+  padding: 12rem 100px;
+}
+
+.inner h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.inner p {
+  font-size: 1.6rem;
+}
 /* footer styles */
 .footer {
   display: inline-block;
