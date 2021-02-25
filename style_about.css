@@ -7,11 +7,11 @@
 html {
   font-size: 62.5%;
   overflow: scroll;
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 body {
-  font-family: "Shippori Mincho", serif;
+  font-family: "Shippori Mincho", serif !important;
 }
 
 /* Nav Styles F2D3BC E5CBCE*/
@@ -19,19 +19,23 @@ body {
 .nav {
   position: relative;
   font-size: 2.5rem;
-  height: 15%;
+  min-height: 32rem;
   width: 100%;
-  background-color: rgb(242, 211, 188);
-
-  padding-top: 2rem;
+  background: url(/images/4k2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.nav a {
+.nav-buttons a {
+  position: relative;
   color: white;
   text-decoration: none;
-  text-align: center;
   display: inline-block;
   padding: 1.2rem 2.5rem;
   font-weight: bold;
@@ -56,60 +60,69 @@ body {
   text-align: center;
 }
 
+nav-buttons {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 .content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-color: rgb(238, 230, 223);
 }
 
 .about {
   background: url(/images/woman.jpeg) no-repeat left;
   background-size: 55%;
-  background-color: whitesmoke;
   min-height: 35vh;
   width: 80%;
   padding: 100px 0;
 }
 
 .inner {
-  background-color: rgb(242, 211, 188);
+  background-color: rgb(100, 73, 33);
   width: 55%;
   float: right;
   padding: 12rem 100px;
 }
 
 .inner h1 {
+  color: white;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 .inner p {
+  color: white;
   font-size: 1.6rem;
 }
 /* footer styles */
 .footer {
-  display: inline-block;
+  display: flex;
   position: relative;
-  bottom: 0%;
   height: 20rem;
   width: 100%;
   background-color: black;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-wrapper {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-media {
   position: relative;
   display: inline-block;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .instagram-logo {

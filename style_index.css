@@ -7,29 +7,24 @@
 html {
   font-size: 62.5%;
   overflow: scroll;
-  background-color: rgb(153, 126, 106);
+  background-color: black;
 }
 
 body {
-  font-family: "Shippori Mincho", serif;
+  font-family: "Shippori Mincho", serif !important;
 }
 
 /* Nav Styles F2D3BC E5CBCE*/
 
-.banner {
-  width: 30rem;
-  height: 20rem;
-}
-
 .nav {
   position: relative;
   font-size: 2.5rem;
-  height: 40rem;
+  min-height: 32rem;
   width: 100%;
-  background: url(/images/4k2.jpeg);
-  background-size: 100%;
+  background: url(/images/4k2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 40%;
+  background-position: 50% 50%;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
@@ -37,7 +32,7 @@ body {
   justify-content: space-between;
 }
 
-.nav a {
+.nav-buttons a {
   position: relative;
   color: white;
   text-decoration: none;
@@ -66,75 +61,75 @@ body {
 }
 
 nav-buttons {
+  position: relative;
   display: inline-block;
   width: 100%;
 }
-/* Subnav styles */
 
-.subnav {
-  text-align: center;
-  border-top: 1px solid rgb(158, 108, 68);
-  border-bottom: 1px solid rgb(158, 108, 68);
-  background-color: whitesmoke;
+/* Call to action */
+
+.cta {
   width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 1.4rem 0;
+  background-color: rgb(212, 182, 145);
+  border-top: 2px rgb(124, 94, 46) solid;
+  border-bottom: 2px rgb(124, 94, 46) solid;
 }
 
-.subnav-pic {
-  position: relative;
+.cta-wrapper {
 }
 
-.subnav-text h2 {
-  color: white;
-  position: relative;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: normal;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+.cta-content {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.call-to-action {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
-
-.action-button {
-  color: white;
-  text-decoration: none;
+.cta-left {
+  display: inline-block;
   font-size: 3rem;
-  background: rgb(168, 155, 145);
-  background: linear-gradient(
-    90deg,
-    rgb(201, 169, 130) 0%,
-    rgb(102, 77, 38) 60%,
-    rgb(114, 73, 30) 100%
-  );
-  padding: 0.6rem 1rem 0.8rem;
-  border: black;
-  border-radius: 3px;
-  cursor: pointer;
-  box-shadow: 0 0 6px 4px rgb(122, 122, 122);
 }
+
+.cta-left h4 {
+  color: white;
+}
+
+cta-right {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.cta-right a {
+  font-size: 3rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(124, 94, 46);
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
+}
+
 /* Content Wrapper */
 
+.container {
+  background-color: rgb(238, 230, 223);
+}
+
 .content-wrapper {
+  margin-top: 2rem;
   position: relative;
   text-align: center;
 }
 
 .box-title {
-  color: white;
+  margin-top: 2.2rem;
+  color: black;
   position: relative;
   display: inline-block;
   font-size: 2.2rem;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   width: 125rem;
 }
@@ -243,28 +238,195 @@ nav-buttons {
   width: 100%;
 }
 
+/* mid section styles */
+
+.mid-section {
+  height: 80rem;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.mid-section-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.mid-left-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-right-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-left {
+  position: relative;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 230, 223);
+}
+
+.mid-right {
+  position: relative;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 230, 223);
+}
+
+.mid-left-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 95%;
+  background: url(/images/4k3.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-right-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 95%;
+  width: 95%;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(238, 230, 223);
+  text-align: left;
+  border: 5px rgb(124, 94, 46) solid;
+}
+
+.mid-left-inner h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.mid-right-inner h1 {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  font-size: 3rem;
+}
+
+.mid-right-inner h2 {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 4px;
+  padding-bottom: 1rem;
+  border-bottom: 2px rgb(124, 94, 46) solid;
+}
+
+.line {
+  width: 60%;
+  height: 6px;
+  background-color: rgb(82, 51, 17);
+  border-radius: 40px;
+  margin-top: 1.2rem;
+}
+
+/* booking */
+
+.booking {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.booking-row {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.booking-column {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.booking-column-full {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.booking-column-full-message {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.booking-column-full-message {
+  height: 10.2rem;
+  font-size: 1.8rem;
+  padding: 0 4px;
+  text-align: start;
+}
+
+input {
+  height: 3.4rem;
+  font-size: 1.8rem;
+  padding: 0 4px;
+}
+
+select {
+  height: 3.4rem;
+  font-size: 1.8rem;
+  padding: 0 4px;
+}
+
 /* footer styles */
 .footer {
-  display: inline-block;
+  display: flex;
   position: relative;
   height: 20rem;
   width: 100%;
   background-color: black;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-wrapper {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .social-media {
   position: relative;
   display: inline-block;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .instagram-logo {

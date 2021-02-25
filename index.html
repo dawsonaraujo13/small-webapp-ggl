@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Genevieve's Lashes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Genevieve's Lashes. A Sarasota based Lash Technician."
     />
-    <meta charset="utf-8" />
     <meta name="robots" content="index,follow" />
     <link
       rel="icon"
       href="/images/logos/closed-eyes-with-lashes-and-brows.svg"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/style_index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap"
       rel="stylesheet"
@@ -37,19 +34,19 @@
           <a href="">Contact</a>
         </div>
       </div>
-      <div class="subnav-wrapper">
-        <div class="subnav-text">
-          <h2><i>"Enhance your natural beauty"</i></h2>
-        </div>
-        <div class="call-to-action">
-          <a class="action-button" href="">Book Appointment</a>
+      <div class="cta">
+        <div class="cta-wrapper">
+          <div class="cta-content">
+            <div class="cta-left">
+              <h4><i>Enhance your natural beauty: </i></h4>
+            </div>
+            <div class="cta-right">
+              <a href="">Book Now!</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="content-wrapper">
-        <div class="box-title">
-          <h1>Services:</h1>
-          <div class="bar-wrapper"></div>
-        </div>
         <div class="box-wrapper">
           <div class="box">
             <div
@@ -109,15 +106,136 @@
             </div>
           </div>
         </div>
-        <div class="footer">
-          <div class="footer-wrapper">
-            <div class="social-media">
-              <img
-                class="instagram-logo"
-                src="/images/logos/Instagram.svg"
-                alt=""
-              />
+      </div>
+      <div class="mid-section">
+        <div class="mid-section-wrapper">
+          <div class="mid-left-wrapper">
+            <div class="mid-left">
+              <div class="mid-left-inner">
+                <h2>Heighten your image</h2>
+                <div class="line"></div>
+                <h2>Request a booking</h2>
+              </div>
             </div>
+          </div>
+          <div class="mid-right-wrapper">
+            <div class="mid-right">
+              <div class="mid-right-inner">
+                <h1>Booking Enquiry</h1>
+                <h2>
+                  Once this form is submitted, we will contact you shortly to
+                  confirm appointment availability. <br />* = Required Field
+                </h2>
+                <form class="booking" action="">
+                  <div class="booking-row">
+                    <div class="booking-column">
+                      <label for="first_name">First Name*</label>
+                      <input
+                        type="text"
+                        name="first"
+                        placeholder="Type here..."
+                        required
+                      />
+                    </div>
+                    <div class="booking-column">
+                      <label for="last_name">Last Name*</label>
+                      <input
+                        type="text"
+                        name="last"
+                        placeholder="Type here..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="booking-row">
+                    <div class="booking-column-full">
+                      <label for="email">Email*</label>
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder="Type here..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="booking-row">
+                    <div class="booking-column">
+                      <label for="phone">Phone Number*</label>
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Type here..."
+                        required
+                      />
+                    </div>
+                    <div class="booking-column">
+                      <label for="instagram">Instagram</label>
+                      <input
+                        type="text"
+                        name="instagram"
+                        placeholder="Type here..."
+                      />
+                    </div>
+                  </div>
+                  <div class="booking-row">
+                    <div class="booking-column">
+                      <label for="service">Service*</label>
+                      <select name="service">
+                        <option value="classic">Classic ($60)</option>
+                        <option value="hybrid">Hybrid ($75)</option>
+                        <option value="volume">Volume ($90)</option>
+                        <option value="fill">Classic - Fill ($30)</option>
+                        <option value="fill">Hybrid - Fill ($40)</option>
+                        <option value="fill">Volume - Fill ($50)</option>
+                      </select>
+                    </div>
+                    <div class="booking-column">
+                      <label for="date">Date*</label>
+                      <input type="date" required />
+                    </div>
+                  </div>
+                  <div class="booking-row">
+                    <div class="booking-column">
+                      <label for="contact">Preferred Contact*</label>
+                      <select name="contact">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="insta">Instagram DM</option>
+                      </select>
+                    </div>
+                    <div class="booking-column">
+                      <label for="time">Appointment Time*</label>
+                      <select name="time">
+                        <option value="ten">10:00 AM</option>
+                        <option value="one">1:00 PM</option>
+                        <option value="five">5:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="booking-row">
+                    <div class="booking-column-full">
+                      <label for="comment">Additional Comment</label>
+                      <input
+                        type="text"
+                        name="comment"
+                        placeholder="Type here..."
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-wrapper">
+          <div class="social-media">
+            <img
+              class="instagram-logo"
+              src="/images/logos/Instagram.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
