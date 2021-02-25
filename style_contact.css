@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: scroll;
+  background-color: black;
+}
+
+body {
+  font-family: "Shippori Mincho", serif !important;
+}
+
+/* Nav Styles F2D3BC E5CBCE*/
+
+.nav {
+  position: relative;
+  font-size: 2.5rem;
+  min-height: 32rem;
+  width: 100%;
+  background: url(/images/4k2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-buttons a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  font-weight: bold;
+  font-size: 2.3rem;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.5s;
+  transition: color 0.5s;
+}
+
+.nav a:hover {
+  border-bottom: 4x solid rgb(155, 155, 155);
+  color: rgb(155, 155, 155);
+}
+
+.nav a:nth-child(3) {
+  border-bottom: 4px solid rgb(155, 155, 155);
+}
+
+.nav-logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+nav-buttons {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(238, 230, 223);
+}
+
+/* footer styles */
+.footer {
+  display: flex;
+  position: relative;
+  height: 20rem;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  position: relative;
+  display: inline-block;
+}
+
+.instagram-logo {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+}
