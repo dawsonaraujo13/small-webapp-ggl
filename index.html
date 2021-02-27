@@ -29,7 +29,6 @@
         </div>
         <div class="nav-buttons">
           <a href="/index.html">Home</a>
-          <a href="">Appointments</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
@@ -204,7 +203,7 @@
                       </select>
                     </div>
                     <div class="booking-column">
-                      <label for="time">Appointment Time*</label>
+                      <label class="time-label" for="time"></label>
                       <select name="time">
                         <option value="ten">10:00 AM</option>
                         <option value="one">1:00 PM</option>
@@ -215,11 +214,12 @@
                   <div class="booking-row">
                     <div class="booking-column-full">
                       <label for="comment">Additional Comment</label>
-                      <input
-                        type="text"
+                      <textarea
                         name="comment"
-                        placeholder="Type here..."
-                      />
+                        id="comment"
+                        cols="30"
+                        rows="4"
+                      ></textarea>
                     </div>
                   </div>
                 </form>
@@ -231,11 +231,10 @@
       <div class="footer">
         <div class="footer-wrapper">
           <div class="social-media">
-            <img
+            <a
               class="instagram-logo"
-              src="/images/logos/Instagram.svg"
-              alt=""
-            />
+              href="https://www.instagram.com/genevieveslashes/"
+            ></a>
           </div>
         </div>
       </div>

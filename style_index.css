@@ -321,6 +321,7 @@ cta-right {
 
 .mid-left-inner h2 {
   font-size: 4rem;
+  text-align: center;
   color: white;
 }
 
@@ -347,6 +348,43 @@ cta-right {
   background-color: rgb(82, 51, 17);
   border-radius: 40px;
   margin-top: 1.2rem;
+}
+
+.time-label::before {
+  content: "Appointment Time*";
+}
+
+@media screen and (max-width: 1000px) {
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-left {
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .mid-section {
+    height: 110rem;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  .mid-section-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time-label::before {
+    content: "Appt. Time*";
+  }
 }
 
 /* booking */
@@ -404,6 +442,12 @@ select {
   padding: 0 4px;
 }
 
+textarea {
+  resize: none;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
 /* footer styles */
 .footer {
   display: flex;
@@ -427,10 +471,15 @@ select {
 .social-media {
   position: relative;
   display: inline-block;
+  height: fit-content;
+  width: fit-content;
 }
 
 .instagram-logo {
   position: relative;
+  display: inline-block;
+  background-image: url(/images/logos/Instagram.svg);
+  background-size: cover;
   height: 5rem;
   width: 5rem;
 }

@@ -98,10 +98,15 @@ nav-buttons {
 .social-media {
   position: relative;
   display: inline-block;
+  height: fit-content;
+  width: fit-content;
 }
 
 .instagram-logo {
   position: relative;
+  display: inline-block;
+  background-image: url(/images/logos/Instagram.svg);
+  background-size: cover;
   height: 5rem;
   width: 5rem;
 }
