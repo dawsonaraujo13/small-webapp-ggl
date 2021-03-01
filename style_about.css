@@ -39,7 +39,7 @@ body {
   display: inline-block;
   padding: 1.2rem 2.5rem;
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 2rem;
   border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s;
   transition: color 0.5s;
@@ -50,7 +50,7 @@ body {
   color: rgb(155, 155, 155);
 }
 
-.nav a:nth-child(3) {
+.nav a:nth-child(2) {
   border-bottom: 4px solid rgb(155, 155, 155);
 }
 
@@ -73,6 +73,8 @@ nav-buttons {
   justify-content: center;
   width: 100%;
   background-color: rgb(238, 230, 223);
+  padding: 5rem;
+  padding: 5rem;
 }
 
 .about {
@@ -84,10 +86,10 @@ nav-buttons {
 }
 
 .inner {
-  background-color: rgb(100, 73, 33);
+  background-color: rgb(80, 60, 32);
   width: 55%;
   float: right;
-  padding: 12rem 100px;
+  padding: 10rem 100px;
 }
 
 .inner h1 {
@@ -99,6 +101,37 @@ nav-buttons {
 .inner p {
   color: white;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner {
+    padding: 6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-size: 100%;
+    background-size: cover;
+    padding: 10rem 4rem;
+  }
+
+  .inner {
+    padding: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0rem;
+    background-size: 0%;
+  }
+
+  .inner {
+    padding: 3rem;
+    width: 100%;
+  }
 }
 /* footer styles */
 .footer {
