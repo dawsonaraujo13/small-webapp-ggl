@@ -125,7 +125,7 @@
                   Once this form is submitted, we will contact you shortly to
                   confirm appointment availability. <br />* = Required Field
                 </h2>
-                <form class="booking" action="">
+                <form class="booking" method="post" action="booking.php">
                   <div class="booking-row">
                     <div class="booking-column">
                       <label for="first_name">First Name*</label>
@@ -222,7 +222,9 @@
                       ></textarea>
                     </div>
                   </div>
-                  <button class="submit-button" type="submit">Submit</button>
+                  <button class="submit-button" name="submit" type="submit">
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
