@@ -218,6 +218,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .nav-buttons a {
+    font-size: 1.6rem;
+  }
+}
+
 /* footer styles */
 .footer {
   display: flex;

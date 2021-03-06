@@ -123,6 +123,10 @@ nav-buttons {
 }
 
 @media screen and (max-width: 600px) {
+  .nav-buttons a {
+    font-size: 1.6rem;
+  }
+
   .about {
     padding: 0rem;
     background-size: 0%;
