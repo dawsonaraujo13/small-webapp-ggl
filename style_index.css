@@ -242,7 +242,7 @@ cta-right {
 /* mid section styles */
 
 .mid-section {
-  height: 80rem;
+  height: fit-content;
   width: 100%;
   background-color: whitesmoke;
 }
@@ -278,6 +278,7 @@ cta-right {
   height: 90%;
   width: 90%;
   margin: 10%;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   background-color: rgb(238, 230, 223);
@@ -289,6 +290,7 @@ cta-right {
   height: 90%;
   width: 90%;
   margin: 10%;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   background-color: rgb(238, 230, 223);
@@ -300,6 +302,7 @@ cta-right {
   flex-direction: column;
   height: 95%;
   width: 95%;
+  min-height: 50rem;
   background: url(/images/4k3.jpg);
   background-size: cover;
   justify-content: center;
@@ -370,7 +373,7 @@ cta-right {
   }
 
   .mid-section {
-    height: 110rem;
+    height: fit-content;
     width: 100%;
     background-color: whitesmoke;
   }
@@ -392,7 +395,89 @@ cta-right {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    height: 70rem;
+    width: 95%;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(238, 230, 223);
+    text-align: left;
+    border: 5px rgb(124, 94, 46) solid;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-left {
+    display: inline-block;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-right a {
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(124, 94, 46);
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
+  }
+
+  .mid-section {
+    height: fit-content;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  .mid-section-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    margin: 2rem;
+    height: 30rem;
+    width: 25rem;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 2px solid rgb(158, 108, 68);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15rem;
+  }
+
+  .box-description {
+    display: inline-block;
+    margin-top: 1.4rem;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 15rem;
+    border-bottom: 2px solid rgb(158, 108, 68);
+  }
+
+  .time-label::before {
+    content: "Appt. Time*";
+  }
+
+  .mid-right-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
     width: 95%;
     justify-content: left;
     align-items: center;
@@ -412,6 +497,7 @@ cta-right {
 
 .booking-row {
   display: flex;
+  justify-content: space-between;
   margin: 1rem 0;
 }
 
@@ -419,8 +505,7 @@ cta-right {
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-right: 1rem;
+  width: 48%;
 }
 
 .booking-column-full {
@@ -428,7 +513,6 @@ cta-right {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-right: 1rem;
 }
 
 .booking-column-full-message {
