@@ -86,7 +86,7 @@ nav-buttons {
 }
 
 .inner {
-  background-color: rgb(80, 60, 32);
+  background-color: rgb(102, 82, 54);
   width: 55%;
   float: right;
   padding: 10rem 100px;
@@ -129,8 +129,9 @@ nav-buttons {
   }
 
   .inner {
-    padding: 3rem;
+    padding: 2rem;
     width: 100%;
+    border-radius: 5px;
   }
 }
 /* footer styles */
