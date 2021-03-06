@@ -180,6 +180,11 @@ textarea {
 }
 
 @media screen and (max-width: 1000px) {
+  .content-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .booking-row {
     display: flex;
     flex-direction: column;
