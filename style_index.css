@@ -203,14 +203,14 @@ cta-right {
   margin-top: 1.4rem;
   position: relative;
   font-size: 2rem;
-  height: 15rem;
+  height: fit-content;
+  min-height: 15rem;
   border-bottom: 2px solid rgb(158, 108, 68);
 }
 
 .box-description p {
   position: relative;
   display: inline-block;
-  height: 100%;
 }
 
 .new {
@@ -464,7 +464,8 @@ cta-right {
     position: relative;
     font-size: 1.5rem;
     font-weight: bold;
-    height: 15rem;
+    height: fit-content;
+    min-height: 15rem;
     border-bottom: 2px solid rgb(158, 108, 68);
   }
 
