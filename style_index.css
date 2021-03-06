@@ -156,7 +156,7 @@ cta-right {
   border-radius: 8px;
   border: 2px solid rgb(158, 108, 68);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
-  margin-bottom: 18rem;
+  margin-bottom: 15rem;
 }
 
 .box:nth-child(3) {
@@ -455,7 +455,7 @@ cta-right {
     border-radius: 8px;
     border: 2px solid rgb(158, 108, 68);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
-    margin-bottom: 15rem;
+    margin-bottom: 18rem;
   }
 
   .box-description {
