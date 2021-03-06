@@ -98,6 +98,8 @@ nav-buttons {
   background-color: rgb(212, 182, 145);
   border-radius: 5px;
   padding: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .contact {
@@ -180,11 +182,6 @@ textarea {
 }
 
 @media screen and (max-width: 1000px) {
-  .content-wrapper {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .booking-row {
     display: flex;
     flex-direction: column;
