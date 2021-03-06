@@ -99,6 +99,7 @@ cta-right {
   display: inline-block;
   font-size: 3rem;
   margin: 1rem;
+  white-space: nowrap;
 }
 
 .cta-right a {
@@ -428,6 +429,7 @@ cta-right {
     padding: 0.4rem 1rem;
     border-radius: 0.6rem;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.05), 2px 2px 7px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
   }
 
   .mid-section {
