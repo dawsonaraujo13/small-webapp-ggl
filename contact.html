@@ -37,7 +37,11 @@
         <div class="content-wrapper">
           <div class="contact-wrapper">
             <div class="contact">
-              <form class="contact-form" action="">
+              <form
+                class="contact-form"
+                method="POST"
+                action="https://formspree.io/f/xwkwgego"
+              >
                 <h1>Contact Me:</h1>
                 <div class="booking-row">
                   <div class="booking-column">
@@ -63,7 +67,7 @@
                   <div class="booking-column-full">
                     <label for="email">Email*</label>
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       placeholder="Type here..."
                       required
@@ -82,7 +86,9 @@
                     ></textarea>
                   </div>
                 </div>
-                <button class="submit-button" type="">Submit</button>
+                <button class="submit-button" type="submit" name="submit">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
