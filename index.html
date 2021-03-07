@@ -135,7 +135,7 @@
                       <label for="first_name">First Name*</label>
                       <input
                         type="text"
-                        name="first"
+                        name="First Name"
                         placeholder="Type here..."
                         required
                       />
@@ -144,7 +144,7 @@
                       <label for="last_name">Last Name*</label>
                       <input
                         type="text"
-                        name="last"
+                        name="Last Name"
                         placeholder="Type here..."
                         required
                       />
@@ -155,7 +155,7 @@
                       <label for="email">Email*</label>
                       <input
                         type="email"
-                        name="email"
+                        name="Email"
                         placeholder="Type here..."
                         required
                       />
@@ -166,7 +166,7 @@
                       <label for="phone">Phone Number*</label>
                       <input
                         type="text"
-                        name="phone"
+                        name="Phone Number"
                         placeholder="Type here..."
                         required
                       />
@@ -175,7 +175,7 @@
                       <label for="instagram">Instagram</label>
                       <input
                         type="text"
-                        name="instagram"
+                        name="Instagram"
                         placeholder="Type here..."
                       />
                     </div>
@@ -183,24 +183,26 @@
                   <div class="booking-row">
                     <div class="booking-column">
                       <label for="service">Service*</label>
-                      <select name="service">
-                        <option value="classic">Classic ($60)</option>
-                        <option value="hybrid">Hybrid ($75)</option>
-                        <option value="volume">Volume ($90)</option>
-                        <option value="fill">Classic - Fill ($30)</option>
-                        <option value="fill">Hybrid - Fill ($40)</option>
-                        <option value="fill">Volume - Fill ($50)</option>
+                      <select name="Service">
+                        <option value="classic set">Classic ($60)</option>
+                        <option value="hybrid set">Hybrid ($75)</option>
+                        <option value="volume set">Volume ($90)</option>
+                        <option value="classic fill">
+                          Classic - Fill ($45)
+                        </option>
+                        <option value="hybrid fill">Hybrid - Fill ($50)</option>
+                        <option value="volume fill">Volume - Fill ($55)</option>
                       </select>
                     </div>
                     <div class="booking-column">
-                      <label for="date">Date*</label>
+                      <label class="date-label" for="date"></label>
                       <input type="date" required />
                     </div>
                   </div>
                   <div class="booking-row">
                     <div class="booking-column">
                       <label for="contact">Contact Via*</label>
-                      <select name="contact">
+                      <select name="Contact Via">
                         <option value="email">Email</option>
                         <option value="phone">Phone</option>
                         <option value="insta">Instagram DM</option>
@@ -208,10 +210,10 @@
                     </div>
                     <div class="booking-column">
                       <label class="time-label" for="time"></label>
-                      <select name="time">
-                        <option value="ten">10:00 AM</option>
-                        <option value="one">1:00 PM</option>
-                        <option value="five">5:00 PM</option>
+                      <select name="Appt. Time">
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
                       </select>
                     </div>
                   </div>

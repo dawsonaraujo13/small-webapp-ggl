@@ -359,6 +359,10 @@ cta-right {
   content: "Appointment Time*";
 }
 
+.date-label::before {
+  content: "Appointment Date*";
+}
+
 @media screen and (max-width: 1000px) {
   .cta-content {
     display: flex;
@@ -389,6 +393,10 @@ cta-right {
 
   .time-label::before {
     content: "Appt. Time*";
+  }
+
+  .date-label::before {
+    content: "Appt. Date*";
   }
 
   .mid-right-inner {
